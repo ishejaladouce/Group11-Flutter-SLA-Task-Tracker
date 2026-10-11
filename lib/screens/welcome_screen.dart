@@ -143,9 +143,11 @@ class _Feature extends StatelessWidget {
         children: [
           Icon(icon, color: Colors.white, size: 22),
           const SizedBox(width: 12),
-          Text(
-            text,
-            style: const TextStyle(fontSize: 15, color: Colors.white),
+          Flexible(
+            child: Text(
+              text,
+              style: const TextStyle(fontSize: 15, color: Colors.white),
+            ),
           ),
         ],
       ),
